@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+
+    </article>
+    <input type="button" value="fetch" onclick="
+    // fetch('html').then(function(response){ //fetch라는 명령어를 통해 html이라는 코드를 요청하고, 응답이 끝나면
+    //     response.text().then(function(text){ //서버가 응답해준 데이터가 text라는 변수에 담겨있다.
+    //         document.querySelector('article').innerHTML = text;
+    //     })
+    // })
+    // Asybchoronous 
+    fetch('html').then(function(response){ //함수가 호출될때 response 객체 입력값으로 주고 있다.
+        console.log(response);
+    })
+
+    fetch('html').then(callbackme); // 1) fetch를 통해 html 파일을 요청한다. 요청하는 동안 다른일을 하고있을게
+    // 2) 일이 끝나면 callbackme 라는 함수를 실행시켜줘
+    ">
+</body>
+</html>
+
